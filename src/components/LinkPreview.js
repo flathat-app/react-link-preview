@@ -1,17 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import PropTypes from 'prop-types'
 import styles from './LinkPreview.css'
-
-const isValidUrlProp = (props, propName, componentName) => {
-  if (!props) {
-    return new Error(`Required parameter URL was not passed.`)
-  }
-  if (!isValidUrl(props[propName])) {
-    return new Error(
-      `Invalid prop '${propName}' passed to '${componentName}'. Expected a valid url.`
-    )
-  }
-}
 
 const isValidUrl = (url) => {
   const regex = /https?:\/\/(www\.)?[-a-zA-Z0-9@:%._+~#=]{2,256}\.[a-z]{2,6}\b([-a-zA-Z0-9@:%_+.~#?&//=]*)/
@@ -149,18 +137,6 @@ LinkPreview.defaultProps = {
   marginBottom: '18px',
   marginRight: 'auto',
   marginLeft: 'auto'
-}
-
-LinkPreview.propTyps = {
-  url: isValidUrlProp,
-  onClick: PropTypes.func,
-  render: PropTypes.func,
-  width: PropTypes.string,
-  maxWidth: PropTypes.string,
-  marginTop: PropTypes.string,
-  marginBottom: PropTypes.string,
-  marginRight: PropTypes.string,
-  marginLeft: PropTypes.string
 }
 
 export default LinkPreview

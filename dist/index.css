@@ -15,16 +15,11 @@
   }
   ._3elLK ._Z-Tng,
   ._3elLK ._13bre ._1Igjx {
-	-webkit-animation-duration: 2.25s;
-	        animation-duration: 2.25s;
-	-webkit-animation-fill-mode: forwards;
-	        animation-fill-mode: forwards;
-	-webkit-animation-iteration-count: infinite;
-	        animation-iteration-count: infinite;
-	-webkit-animation-name: _yKlsy;
-	        animation-name: _yKlsy;
-	-webkit-animation-timing-function: linear;
-	        animation-timing-function: linear;
+	animation-duration: 2.25s;
+	animation-fill-mode: forwards;
+	animation-iteration-count: infinite;
+	animation-name: _yKlsy;
+	animation-timing-function: linear;
 	background: #f6f6f6;
 	background: linear-gradient(
 	  to right,
@@ -33,14 +28,6 @@
 	  #f6f6f6 33%
 	);
 	position: relative;
-  }
-  @-webkit-keyframes _yKlsy {
-	0% {
-	  background-position: -468px 0;
-	}
-	100% {
-	  background-position: 468px 0;
-	}
   }
   @keyframes _yKlsy {
 	0% {
